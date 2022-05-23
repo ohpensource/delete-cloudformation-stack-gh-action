@@ -10,7 +10,7 @@ jobs:
         with:
           fetch-depth: 0
           token: ${{ secrets.CICD_GITHUB_REPOSITORY_TOKEN }}
-      - uses: ohpensource/generate-version-and-release-notes-gh-action@v0.3.1
+      - uses: ohpensource/generate-version-and-release-notes-gh-action@v0.4.0
         name: semver & changelog
         with:
           user-email: "github-actions@github.com"
