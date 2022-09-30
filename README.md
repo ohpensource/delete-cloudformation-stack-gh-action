@@ -26,8 +26,8 @@ jobs:
         name: terraform apply
         with:
           region: "eu-west-1"
-          access-key: $COR_AWS_ACCESS_KEY_ID
-          secret-key: $COR_AWS_SECRET_ACCESS_KEY
+          access-key: ${{ secrets.COR_AWS_ACCESS_KEY_ID }}
+          secret-key: ${{ secrets.COR_AWS_SECRET_ACCESS_KEY }}
           account: "88..."
           role-name: "dev-cicd-automation"
           stack-name: "my-stack-name"
