@@ -7,7 +7,7 @@ Providers github action to delete CFN stack
 
 ## Features
 
-- 23-05-2022: Delete CFN stack.
+- 23-05-2022: Delete CFN stack
 
 ## How to use
 
