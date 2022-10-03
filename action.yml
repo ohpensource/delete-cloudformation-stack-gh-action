@@ -22,5 +22,12 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - run: ${{ github.action_path }}/delete-cfn-stack.sh ${{ inputs.region }} ${{ inputs.access-key }} ${{ inputs.secret-key }} ${{ inputs.account }} ${{ inputs.role-name }} ${{ inputs.stack-name }}
-      shell: bash
+    - shell: bash
+      run: |
+        ${{ github.action_path }}/delete-cfn-stack.sh \
+          "${{ inputs.region }}" \
+          "${{ inputs.access-key }}" \
+          "${{ inputs.secret-key }}" \
+          "${{ inputs.account }}" \
+          "${{ inputs.role-name }}" \
+          "${{ inputs.stack-name }}"
